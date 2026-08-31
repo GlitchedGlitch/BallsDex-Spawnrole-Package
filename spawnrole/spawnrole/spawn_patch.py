@@ -3,8 +3,10 @@ this is where magic happens :3
 """
 
 import logging
+
 import discord
 from discord.ui import TextDisplay
+
 from ballsdex.packages.countryballs.countryball import BallSpawnView
 from bd_models.models import GuildConfig
 
@@ -42,8 +44,7 @@ async def _patched_build(self, spawn_message: str, file_name: str, guild_id: int
         mention_text = f"<@&{spawn_role_id}>"
 
     mention_display = TextDisplay(mention_text)
-    # Add to the view's children
-    self.add_item(mention_display)
+    self._children.insert(1, mention_display)
 
 def apply():
     BallSpawnView.build = _patched_build
