@@ -6,7 +6,7 @@ Add this to config/extra.toml (or create the file if it doesn't exist)
 ```toml
 # Spawnrole Package
 [[ballsdex.packages]]
-location = "git+https://github.com/GlitchedGlitch/BallsDex-Spawnrole-Package.git"
+location = "git+https://github.com/GlitchedGlitch/BallsDex-Spawnrole-Package.git@1.2.0"
 path = "spawnrole"
 enabled = true
 ```
