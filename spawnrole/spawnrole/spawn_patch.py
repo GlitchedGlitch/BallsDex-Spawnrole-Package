@@ -4,7 +4,7 @@ this is where magic happens :3
 
 import logging
 import discord
-from ballsdex.core.discord import TextDisplay
+from discord.ui import TextDisplay
 from ballsdex.packages.countryballs.countryball import BallSpawnView
 from bd_models.models import GuildConfig
 
